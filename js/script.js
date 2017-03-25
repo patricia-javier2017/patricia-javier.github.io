@@ -22,7 +22,7 @@ $(function() {
 					$('#song-result-message').html('<span>Thank you</span>');
 				},
 				error:function(e) {
-					$('#song-result-message').html('<p>Sorry there was an issue sending your song choice, <a href="https://patricia-javier2017.github.io/#rsvp">please try again.</a></p>');
+					$('#song-result-message').html('<p>Sorry there was an issue sending your song choice, <a href="https://patricia-javier2017.github.io/">please try again.</a></p>');
 				}
 			});
 
@@ -61,7 +61,7 @@ $(function() {
 					
 				},
 				error:function(e){
-				$('#rsvp-result-message').html('<span>Sorry there was an issue sending your RSVP, <a href="https://patricia-javier2017.github.io/#rsvp">please try again.</a></span>');
+				$('#rsvp-result-message').html('<span>Sorry there was an issue sending your RSVP, <a href="https://patricia-javier2017.github.io/">please try again.</a></span>');
 				}
 			});
 
