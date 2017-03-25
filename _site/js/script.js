@@ -14,7 +14,7 @@ $(function() {
 
 			$.ajax({
 				type: 'POST',
-				url: 'http://www.philandjacquigethitched.com/dj-mailer.php',
+				url: 'https://patricia-javier2017.github.io/',
 				data: {
 					song: songChoice,
 				},
@@ -22,7 +22,7 @@ $(function() {
 					$('#song-result-message').html('<span>Thank you</span>');
 				},
 				error:function(e) {
-					$('#song-result-message').html('<p>Sorry there was an issue sending your song choice, <a href="http://philandjacquigethited.com">please try again.</a></p>');
+					$('#song-result-message').html('<p>Sorry there was an issue sending your song choice, <a href="https://patricia-javier2017.github.io/">please try again.</a></p>');
 				}
 			});
 
@@ -50,7 +50,7 @@ $(function() {
 
 			$.ajax({
 				type: 'POST',
-				url: 'http://www.philandjacquigethitched.com/mailer.php',
+				url: 'https://patricia-javier2017.github.io/',
 				data: {
 					name: rsvpName,
 					attendance: rsvpAttendance,
@@ -61,7 +61,7 @@ $(function() {
 					
 				},
 				error:function(e){
-					$('#rsvp-result-message').html('<span>Sorry there was an issue sending your RSVP, <a href="http://philandjacquigethited.com">please try again.</a></span>');
+				$('#rsvp-result-message').html('<span>Sorry there was an issue sending your RSVP, <a href="https://patricia-javier2017.github.io/">please try again.</a></span>');
 				}
 			});
 
