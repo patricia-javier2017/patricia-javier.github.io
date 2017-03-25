@@ -1,0 +1,469 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Patricia and Javier</title>
+	
+	<meta name="description" content="Patricia and Javier´s wedding">
+	<meta name="author" content="Philip Beel http://theodin.co.uk">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+	
+	<!-- FONT -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/animation.css">
+
+
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+</head>
+
+<body>
+	<div id="main" class="container">
+		<!-- Navigation --> 
+		<header>
+			<nav>
+				<ul class="primary row">
+					<li class="span2">
+						<a title="" href="#rsvp">
+							<span class="title">RSVP - Invitados</span>
+							<span>Gift list and music choice - Lista de regalos y música</span>
+						</a>
+					</li>
+					<li class="span2">
+						<a  title="" href="#intinerary">
+							<span class="title">The Day - El día</span>
+							<span>Itinerary of what to expect - Intinerario de lo que debes esperar</span>
+						</a>
+					</li>
+					<li class="logo span4">
+						<a title="Patricia and Javier's wedding" href="http://www.philandjacquigethitched.com">
+							Patricia and Javier's wedding -La boda de Patricia y Javier
+						</a>
+					</li>
+					<li class="span2">
+						<a title="" href="#hotels">
+							<span class="title">Hotels- Hoteles</span>
+							<span>Accomodation close the the ceremony - Alojamiento cerca de la cermonia</span>
+						</a>
+					</li>
+					<li class="span2">
+						<a title="" href="#location">
+							<span class="title">Location - Lugar</span>
+							<span>Ceremony details - Detalles de la ceremonia</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div class="clear"><hr /></div>
+		
+		<section class="row">
+			<div class="span24 introduction">
+				<h1>Paricia and Javier are getting hitched! </h1> 
+				 <h1> Patricia y Javier se casan!</h1>
+				<p>We are looking forward to seeing you on July 29th 2017 and enjoying the day with you!  - Esperanos verte el 29 de Julio de 2017 y disfrutar del día contigo! </p>
+			</div>  
+		</section>
+
+		<div class="clear"><hr /></div>
+
+		<section class="row">
+			<a id="rsvp"></a>
+			<div class="span6">
+				<div class="rsvp card">
+					<h2>RSVP - Invitados </h2>
+					<p>If you haven't already, please let us know you are coming on July 29th, 2017.</p>
+					<p> Si aún no te has registrado, por favor dinos si vas a venir el 29 de Julio de 2017. </p>
+					<div class="validation-message" id="rsvp-validation"></div>
+					<div class="rsvp-result-message" id="rsvp-result-message"></div>
+					<div id="rsvp-loading" class="spinner">
+						<div class="bounce1"></div>
+						<div class="bounce2"></div>
+						<div class="bounce3"></div>
+					</div>
+	                <form name="" id="rsvp-form" method="get" action="dest">
+	                    <input type="text" class="text-field" name="rsvp-name" id="rsvp-name" placeholder="e.g. Principe Gitano" /><br />
+	                    
+	                    <select name="rsvp-attendance" id="rsvp-attendance">
+	                    	<option value="yes">Will be attending - Iré a la boda</option>
+	                    	<option value="no">Will not be attending - No iré a la boda</option>
+	                    </select><br />
+
+	                    <input type="submit" class="btn ladda-button" data-color="purple" value="SEND RSVP - Enviar" />
+
+	                </form>  					
+				</div>
+			</div>
+
+			<div class="span3">
+				<div class="gift-ideas card">
+					<span>Gift list - Lista de regalos</span><br />
+					
+					<p>
+					<span class="normal">Your presence at our wedding is gift enough, but if you do wish to buy us something, a contribution towards our honeymoon would be lovely.</span></p>	
+
+					<p>
+					<span class="normal">
+					Tu presencia ya es un regalo para nosotros pero si quires regalarnos algo, una contribución a nuestro viaje de luna miel es lo que mas apreciariamos.</span></p>
+
+					</span>	
+				</div>
+			</div>
+
+			<div class="span3">
+				<div class="dj-suggestions card">
+					<span>The playlist - La música</span><br />
+					<p><span class="normal">Let us know your favourite song for the night and we will try to get it played!</span></p>	
+					<p><span class="normal">Dinos cual es tu canción favoriata e intentaremos ponerla!</span></p>	
+					<div class="song-result-message" id="song-result-message"></div>
+					<div id="song-loading" class="spinner">
+						<div class="bounce1"></div>
+						<div class="bounce2"></div>
+						<div class="bounce3"></div>
+					</div>
+					<form name="music" class="dj-form" id="dj-form" method="get" action="#">
+						<input type="text" class="text-field" name="song-choice" id="song-choice" placeholder="e.g. Sade, by your side" /><br />
+						<input type="submit" class="btn ladda-button" data-color="green" value="SEND" />
+					</form>  					
+
+				</div>
+			</div>
+
+		</section>
+
+		<div class="clear"><hr /></div>
+
+		<section class="row">
+			<a id="intinerary"></a>
+			<div class="span24 itinerary">
+				<h2>The Day - El día</h2>
+
+			<!-- Top of timeline -->
+			<div class="timeline-end row">
+
+				<div class="span12">
+					<h4>Morning - Mañana</h4>
+				</div>
+
+			</div>	
+			
+
+<!-- bloque 1, RSVP -->
+
+			<div id="timeline-wrap">
+			
+				<div class="timeline-row-first timeline-row timeline-row-right">
+
+					<div class="timeline-entry timeline-entry-right">
+						<h4> RSVP arrives - Los invitados llegan </h4>
+						<hr/>
+						<div class="timeline-car timeline-icon">
+							<p> Guests to arrive at the Double tree hotel at 10:45am. The service will commence at 11:00am shrarp, unless someone regrets in the very last moment...</p>
+							<p> Los invitados llegan al hotel a las 10:45am. La ceremonia comenzara a las 11:00am en punto, a menos que alguien se arrepienta en el último momento...</p>
+							<p class="note"> - 10:45pm</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
+				</div>
+						
+
+<!-- bloque 2, ceremony -->
+
+				<!-- Entry in time line, on left -->
+				<div class="timeline-row timeline-row-left">
+
+					<div class="timeline-entry timeline-entry-left">
+						<h4>I do - Sí, quiero</h4>
+						<hr/>
+						<div class="timeline-rings timeline-icon">
+							<p>The important bit... we are to be married!</p>
+							<p>El momento importante... nos casamos!</p>
+							<p class="note">- 11:00pm</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+<!-- bloque 3, fotos aperitivos -->
+
+
+				<div class="timeline-row timeline-row-right">
+
+					<div class="timeline-entry timeline-entry-right">
+						<h4>Cocktail y fotos</h4>
+						<hr/>
+						<div class="timeline-photography timeline-icon">
+							<p>A yummy cocktail for everyone with some drinks. Time for some pictures!</p>
+							<p>Cocktail para todos con bebidas y aperitivos. Momento de sacarse algunas fotos! </p>
+							<p class="note">- 11:30pm</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
+				</div>
+						
+
+<!-- bloque 2, comida -->
+
+				<!-- Entry in time line, on left -->
+				<div class="timeline-row timeline-row-left">
+
+						<div class="timeline-entry timeline-entry-left">
+						<h4>Wedding Breakfast - Comida</h4>
+						<hr/>
+						<div class="timeline-meal timeline-icon">
+							<p> Three courses meal </p>
+							<p> Comida.. </p>
+							<p class="note">- 12:30pm</p>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+				</div>
+
+<!-- bloque 2, cake -->
+
+				<!-- Entry in time line, on right -->
+				<div class="timeline-row timeline-row-right">
+
+					<div class="timeline-entry timeline-entry-right">
+						<h4>Cutting of the cake</h4>
+						<hr/>
+						<div class="timeline-cake timeline-icon">
+							<p>Ready so we can eat more food and drink more wine.</p>
+							<p class="note">- 14:00pm</p>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+				</div>
+
+
+
+
+
+				<!-- Entry in time line, on left -->
+				<div class="timeline-row timeline-row-left">
+
+					<div class="timeline-entry timeline-entry-left">
+						<h4>Evening guests arrive</h4>
+						<hr/>
+						<div class="timeline-tea timeline-icon">
+							<p>Ready to party the night away. There will be music... and dancing.
+							 IT'S A CASH BAR ONLY!!!
+							</p>
+							<p class="note">- 7:00pm</p>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+				</div>
+				
+				<!-- Entry in time line, on right -->
+				<div class="timeline-row timeline-row-right">
+
+					<div class="timeline-entry timeline-entry-right">
+						<h4>Cutting of the cake</h4>
+						<hr/>
+						<div class="timeline-cake timeline-icon">
+							<p>Ready so we can eat more food and drink more wine.</p>
+							<p class="note">- 7:30pm</p>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+				</div>
+
+				<!-- Entry in time line, on left -->
+				<div class="timeline-row timeline-row-left">
+
+					<div class="timeline-entry timeline-entry-left">
+						<h4>First Dance</h4>
+						<hr/>
+						<div class="timeline-dj timeline-icon">
+							<p>We have a real treat in store for all you Sade fans...</p>
+							<p class="note">- 7:45pm</p>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+				</div>
+
+				<!-- Entry in time line, on right -->
+				<div class="timeline-row timeline-row-right">
+
+					<div class="timeline-entry timeline-entry-right">
+						<h4>Say Farewell</h4>
+						<hr/>
+						<div class="timeline-disturb timeline-icon">
+							<p>... to the bride and groom, but you still have time for one last boogie.</p>
+							<p class="note">- 10:30pm</p>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+
+				</div>
+
+				<!-- Entry in time line, on left -->
+				<div class="timeline-row timeline-row-left">
+
+					<div class="timeline-entry timeline-entry-left">
+						<h4>Carriages</h4>
+						<hr/>
+						<div class="timeline-car timeline-icon">
+							<p>A wonderful day, thanks for coming. The disco will finish at 11, all guests to leave by 11:30pm. Please respect the neighbours and leave quietly.</p>
+							<p class="note">- 11:30pm</p>
+						</div>
+					</div>
+					
+					<div class="clearfix"></div>
+				
+				</div>
+
+			</div>
+			
+			<!-- Bottom of timeline -->
+			<div class="timeline-end row">
+
+				<div class="span12">
+					<h4>Evening</h4>
+				</div>
+
+			</div>
+
+		</section>
+
+		<div class="clear"><hr /></div>
+
+		<section>
+			<a id="hotels"></a>
+			<div class="row">
+				<div class="span12 hotels">
+					<h2>Hotels &amp; accomodation</h2>
+					<p>There are plenty of hotels and B&amp;Bs around Saltwood and Hythe to choose from, but we have picked a selection below for you to take a look at.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="span6">
+					<div class="hotel-odd">
+						<h3>Castle Hotel</h3>
+						<p><strong>Address: </strong> The Green, Hythe, Kent CT21 4AJ</p>
+						<p><strong>Phone: </strong>01303 266311</p>
+						<p><strong>Website: </strong><a target="_blank" href="http://www.castlehotel-saltwood.co.uk/">www.castlehotel.co.uk/</a></p>
+						<p><strong>Distance from venue: </strong>250 ft </p>	
+					</div>
+				</div>
+
+				<div class="span6">
+					<div class="hotel-even">
+						<h3>Hythe Imperial</h3>
+						<p><strong>2 night minimum stay*</strong></p>
+						<p><strong>Address: </strong> Princes Parade, Hythe, Kent CT21 6AE</p>
+						<p><strong>Phone: </strong>01303 267441</p>
+						<p><strong>Website: </strong><a target="_blank" href="http://www.mercure.com/gb/hotel-6862-mercure-hythe-imperial-hotel-spa/index.shtml">www.hytheimperail.com/</a></p>
+						<p><strong>Distance from venue: </strong>1.6 miles</p>
+					</div>	
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="span6">
+					<div class="hotel-even">
+						<h3>The Old Post Office Guest House</h3>
+						<p><strong>Address: </strong> 5 High Street, Hythe, Kent CT21 5AB</p>
+						<p><strong>Phone: </strong>01303 230828</p>
+						<p><strong>Website: </strong><a target="_blank" href="http://www.oldpostofficeguesthousehythe.co.uk/">www.poguesthouse.co.uk/</a></p>
+						<p><strong>Distance from venue: </strong>1 miles</p>
+					</div>
+				</div>
+
+				<div class="span6">
+					<div class="hotel-odd">
+						<h3>Holiday Inn Express Folkestone</h3>
+						<p><strong>Address: </strong> Cheriton Park, Cheriton High Street, Folkestone CT18 8AN</p>
+						<p><strong>Phone: </strong>01303 298450</p>
+						<p><strong>Website: </strong><a target="_blank" href="http://www.ihg.com/holidayinnexpress/hotels/gb/en/folkestone/lyxfx/hoteldetail?cm_mmc=GoogleMaps-_-ex-_-GBEN-_-lyxfx">www.ihg.com/</a></p>
+						<p><strong>Distance from venue: </strong>3.2 miles</p>
+					</div>
+				</div>
+			</div>  
+		</section>
+
+		<div class="clear"><hr /></div>
+
+		<section class="row">
+			<a id="location"></a>
+			<div class="span12 location">
+				<h2>Location - Lugar</h2>
+				<p>Check the map for more information on the hotel and near locations.</p>
+				<p>Consulta en el mapa para más informacion del hotel y los lugares cercanos.</p>
+
+				<div id="map"></div>
+			</div>
+
+		</section>
+
+		<div class="row">
+			<div class="span6 address">
+				<div class="church-address card">
+					<span>service:</span><br />
+					<span>Saint Peter &amp; Saint Pauls Church <br />Saltwood <br />Rectory Lane <br />Hythe <br />Kent <br />CT21 4QA</span>	
+				</div>
+			</div>
+
+			<div class="span6 address">
+				<div class="reception-address card">
+					<span>reception:</span><br />
+					<span>Saltwood Village Hall <br />Rectory Lane <br />Saltwood <br />Hythe <br />Kent <br />CT21 4PZ</span>	
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span12  card">
+				<div class="parking">
+					<h3>Parking</h3>
+					<p>Limited parking is available at the church, with no on-site parking at the reception venue. It is a small village so you can park anywhere near, however please be respectful to the neighbours. Thanks.</p>
+				</div>
+			</div>
+		</div>
+
+		</section>
+
+		<div class="clear"><hr /></div>
+		<section class="footer">
+			<div class="footnote"></div>
+		</section>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+	<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA5h0paaq2zcWGc8znlXZhXRQOSiUxVM-SGYUDi2BtB3xcYRUtqBQ9ecKZgmxyTZhXi4-tFRQMy63Udw"></script>
+	<script type="text/javascript" src="js/libs/jquery.gmap-1.1.0-min.js"></script>
+
+	<script defer src="js/plugins.js"></script>
+	<script defer src="js/script.js"></script>
+
+</body>
+</html>
