@@ -452,3 +452,27 @@ header {
 @media (min-width: 1200px) {
 	nav .logo a, nav .logo a:hover, nav .logo a:link, nav .logo a:visited  {margin:0px 70px;}
 }
+
+
+<style>
+#button {
+    width: 6em;
+    border: 2px solid green;
+    background: #ffe;
+    border-radius: 5px;
+}
+a {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover {
+    color: red;
+    background: #eff;
+}
+</style>
+
+
