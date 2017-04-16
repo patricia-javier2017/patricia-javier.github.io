@@ -50,8 +50,8 @@ p.right {
 	display:none;
 }
 
-a:link { color: #E3E3E3; text-decoration: none; outline:none; }
-a:active {color: #FFFFFF; text-decoration: none; outline:none; }
+a:link { color: black; text-decoration: none; outline:none; }
+a:active {color: black; text-decoration: none; outline:none; }
 a:hover {color: #F28771; text-decoration: none; outline:none; }
 a:visited {color: #E3E3E3; text-decoration: none; outline:none; }
 
