@@ -53,7 +53,7 @@ p.right {
 a:link { color: #E3E3E3; text-decoration: none; outline:none; }
 a:active {color: #FFFFFF; text-decoration: none; outline:none; }
 a:hover {color: #F28771; text-decoration: none; outline:none; }
-a:visited {color: transparent; text-decoration: none; outline:none; }
+a:visited {color: #E3E3E3; text-decoration: none; outline:none; }
 
 
 h1, h2, h3, h4, h5, h6 {font-family:"BebasNeueRegular", Helvetica, Tahoma, Arial;font-weight:normal;text-shadow:0 1px 0 #FFFFFF;margin-bottom:7px;}
