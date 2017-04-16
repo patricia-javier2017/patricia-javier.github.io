@@ -39,7 +39,7 @@ body a:active,
 body a:hover, 
 body a:visited {
 	text-decoration: underline;
-	color: #FFF;
+	color: transparent;
 }
 
 p.right {
