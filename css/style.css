@@ -39,7 +39,7 @@ body a:active,
 body a:hover, 
 body a:visited {
 	text-decoration: underline;
-	color: transparent;
+	color: #FFF;
 }
 
 p.right {
@@ -103,13 +103,13 @@ header {
 			float:left;
 			color:#1b1b1b;
 			clear:both;
-			text-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+			text-shadow:0 0 10px rgba(255, 255, 255, 0.3);
 		}
 		nav a:hover, nav a.current {
-			text-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+			text-shadow:0 0 10px rgba(255, 255, 255, 0.3);
 			color:#F28771;
 			background:none;
-			background-color:transparent;
+			background-color:none;
 		}
 		nav a span {
 			float:left;
@@ -460,7 +460,6 @@ header {
     border: 2px solid green;
     background: #ffe;
     border-radius: 5px;
-    background-color: transparent;
 }
 a {
     display: block;
