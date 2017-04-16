@@ -109,7 +109,7 @@ header {
 			text-shadow:0 0 10px rgba(0, 0, 0, 0.3);
 			color:#F28771;
 			background:none;
-			background-color:none;
+			background-color:transparent;
 		}
 		nav a span {
 			float:left;
